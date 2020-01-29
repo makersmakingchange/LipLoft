@@ -74,7 +74,7 @@ void bluetoothConfigSequence(void) {
   delay(15);
   Serial1.println("SX,0");                          //Set Bonding to 0 or disabled
   delay(15);
-  Serial1.println("SN,LipSyncLiploft"); //("SN,LipSync_MOTORMOUTH");        //Set the name of BT module
+  Serial1.println("SN,LipSyncLipLoft");             //Set the name of BT module (Lipsync_Shawn)
   delay(15);
   Serial1.println("SM,0");                          //Set the Pairing mode to Slave
   delay(15);

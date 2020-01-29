@@ -566,7 +566,7 @@ void configBluetoothModule()
   delay(15);
   Serial1.println("SX,0");                          //Set Bonding to 0 or disabLED_PIN
   delay(15);
-  Serial1.println("SN,MOTORMOUTH");                  //Set the name of BT module
+  Serial1.println("SN,Liploft");                  //Set the name of BT module (MOTORMOUTH)
   delay(15);
   Serial1.println("SM,3");                          //Set the Pairing mode to Master - Auto
   delay(15);
