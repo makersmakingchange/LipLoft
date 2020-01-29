@@ -191,6 +191,7 @@ void loop()
  // {
     
     processIncomingByte(Serial1.read());
+    //processButtonInput();
     //Serial.println(Serial1.read());
     Serial1.flush();   
 
