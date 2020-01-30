@@ -159,13 +159,6 @@ This GitHub repository will serve as a database for all files and documentation 
 
 ### Software
 
-* Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
-* sip/puff controls the throttle
-* LipSync joystick controls pitch and roll
-* Gryo calibration is automated
-
-## Operation
-
 *	Download the necessary files from LipLoft github repository.
   1. Visit LipLoft github repository at https://github.com/makersmakingchange/LipLoft
   2. Click on “Clone or download” button” in green.
@@ -186,6 +179,8 @@ This GitHub repository will serve as a database for all files and documentation 
   3. The red led on bluetooth modules should start blinking faster and the green led on bluetooth modules should stay on to indicate connection is established between lipsync and liploft
   4. You need to power the LipSync (Slave bluetooth module) 5 seconds before the LipLoft unit (Master bluetooth module) if you are connecting the LipSync to LipLoft for the first time
   5. You can use bluetooth manual configuration code if the connection is not established. The bluetooth module in lipsync unit can be reconfigured using "Lipsync_Bluetooth_Config.ino" code and the bluetooth module in liploft interface unit can be reconfigured using "Interface_Bluetooth_Config.ino" code. You will need to upload both codes at the same time. The green led on both bluetooth modules will stay on once the connection is established.
+  
+## Operation
 
 * Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
 * sip/puff controls the throttle
