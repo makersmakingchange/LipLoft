@@ -7782,6 +7782,15 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="160.02" y1="109.22" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="BL" gate="G$1" pin="CTS-I"/>
+<wire x1="-53.34" y1="127" x2="-50.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="127" x2="-50.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="BL" gate="G$1" pin="RTS-O"/>
+<wire x1="-50.8" y1="116.84" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
