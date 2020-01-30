@@ -1,0 +1,8 @@
+﻿Qty,Component ,"Component name (August 12, 2019)",Line Item,Manufacturer,COO,MPN,SKU,SKU,SKU,SKU,SKU,SKU,SKU,SKU,URL ( Canada ),URL ( United States )
+,,,,,,,Digi-Key,Mouser,Qosina,Cole-Parmer,Lee Spring,U.S. Plastic Corp.,B&H Photo,Amazon,,
+1,Required,Arduino Micro,A000053,Arduino,Italy,A000053,1050-1066-ND ,782-A000053 ,,,,,,,https://www.digikey.ca/product-detail/en/arduino/A000053/1050-1066-ND,https://www.digikey.com/product-detail/en/arduino/A000053/1050-1066-ND
+1,Required,SparkFun Bluetooth Mate Silver,WRL-12576,SparkFun Electronics,Italy,WRL-12576,1568-1265-ND,,,,,,,,https://www.digikey.ca/product-detail/en/sparkfun-electronics/WRL-12576/1568-1265-ND/5762415,https://www.digikey.com/product-detail/en/sparkfun-electronics/WRL-12576/1568-1265-ND/5762415
+4,Required,MCP4261 Digital potemtiometer ,,Microchip,,MCP4261,,,,,,,,,,
+4,Required,RES 5.6K OHM 1/4W 5% AXIAL ,,Yageo,,CFR-25JB-52-5K6,5.6KQBK-ND,,,,,,,,https://www.digikey.ca/product-detail/en/yageo/CFR-25JB-52-5K6/5.6KQBK-ND/2243,
+1,Required,"	LED GREEN CLEAR 5MM ROUND",,Cree,,C566C-GFF-CX0Y0892,C566C-GFF-CX0Y0892CT-ND,,,,,,,,https://www.digikey.ca/product-detail/en/cree-inc/C566C-GFF-CX0Y0892/C566C-GFF-CX0Y0892CT-ND/6138564,
+1,Required,300 Ohm 1/4W Axial Through-Hole Resistor ,CF14JT300R,Stackpole Electronics,China,CF14JT300R,CF14JT300RCT-ND,,,,,,,,https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/CF14JT300R/CF14JT300RCT-ND,https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF14JT300R/CF14JT300RCT-ND
