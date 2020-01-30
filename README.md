@@ -81,10 +81,13 @@ This GitHub repository will serve as a database for all files and documentation 
     <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/LipSyncDrone/Don_Encl_v5_ABS_L.x3g">Don_Encl_v5_ABS_L.x3g</a></td>
   </tr>
   <tr>
-  <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design /Liploft_Top_Housing.STL">Liploft_Top_Housing.STL</a></td>
+  <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/LipSync_Button.STL">LipSync_Button.STL</a></td>
   </tr>
   <tr>
-	<td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Base.STL">LipSync_Joystick_Base.STL</a></td>
+  <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/Liploft_Top_Housing.STL">Liploft_Top_Housing.STL</a></td>
+  </tr>
+  <tr>
+  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Base.STL">LipSync_Joystick_Base.STL</a></td>
 </tr>
 <tr>
   <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Front.STL">LipSync_Joystick_Front.STL</a></td>
