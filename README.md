@@ -119,7 +119,54 @@ This GitHub repository will serve as a database for all files and documentation 
 
 ## Installation and setup
 
+### Hardware
 
+* Setup the circuit in breadboard according to the following diagram:
+
+<p align="center">
+<img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Liploft_Breadboard_Picture.png" width="50%" height="50%" alt="Liploft Breadboard Picture"/>
+</p>
+
+* Setup the bluetooth circuit in breadboard according to the following diagram:
+  * Bluetooth module RTS pin to Bluetooth module CTS
+  * Bluetooth module RX pin to Arduino TX pin 
+  * Bluetooth module TX pin to Arduino RX pin 
+  * Bluetooth module VCC pin to Arduino 5V pin 
+  * Bluetooth module GND pin to Arduino GND pin 
+  
+  <p align="center">
+<img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Liploft_Bluetooth_Connection.png" width="50%" height="50%" alt="Liploft Bluetooth Connection"/>
+</p>
+
+
+* Setup the rest of circuit in breadboard according to the following diagram:
+  * MCP4261 IC1 pin 1 to Arduino pin 10
+  * MCP4261 IC2 pin 1 to Arduino pin 9
+  * MCP4261 IC3 pin 1 to Arduino pin 8
+  * MCP4261 IC4 pin 1 to Arduino pin 7
+  * Led pin to Arduino pin 5
+  * MCP4261 IC1,IC2,IC3,IC4 pin 2 to Arduino pin SCK
+  * MCP4261 IC1,IC2,IC3,IC4 pin 3 to Arduino pin MOSI
+  * MCP4261 IC1,IC2,IC3,IC4 pin 4 to Arduino pin GND
+  * MCP4261 IC1,IC2,IC3,IC4 pin 5 to Arduino pin GND
+  * MCP4261 IC1,IC2,IC3,IC4 pin 6 to channels of transmiter (potemtiometer) and same MCP4261 pin 7
+  * MCP4261 IC1,IC2,IC3,IC4 pin 7 to 5.6K resistor and Arduino pin 5V in pullup configuration 
+  * MCP4261 IC1,IC2,IC3,IC4 pin 8 to Arduino pin 5V
+  
+   <p align="center">
+<img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Liploft_Schematics.PNG" width="50%" height="70%" alt="Liploft Schematics"/>
+</p>
+
+### Software
+
+## Operation
+
+* Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
+* sip/puff controls the throttle
+* LipSync joystick controls pitch and roll
+* Gryo calibration is automated
+
+ 
 ## Contact Us
 
 For technical questions, to get involved or share your LipSync experience we encourage you to contact info@makersmakingchange.com
