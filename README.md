@@ -84,7 +84,7 @@ This GitHub repository will serve as a database for all files and documentation 
   <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Housing_design/Liploft_Top.stl">Liploft_Top.STL</a></td>
   </tr>
  <tr>
-  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/Liploft_Bottom.stl">Liploft_Bottom.STL</a></td>
+  <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Housing_design/Liploft_Bottom.stl">Liploft_Bottom.STL</a></td>
 </tr>
  
 </tr>
