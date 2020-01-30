@@ -74,17 +74,29 @@ This GitHub repository will serve as a database for all files and documentation 
     <td>SCH</td>
     <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Electronics/Eagle/Liploft_Schematics.sch">Liploft_Schematics.sch</a></td>
   </tr>
-    <tr>
-    <td rowspan="9">Housing_design</td>
+  <tr>
+    <td rowspan="9">Liploft Housing_design</td>
     <td rowspan="9">V5</td>
     <td rowspan="9">X3G,STL</td>
     <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/LipSyncDrone/Don_Encl_v5_ABS_L.x3g">Don_Encl_v5_ABS_L.x3g</a></td>
   </tr>
+   <tr>
+  <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Housing_design/Liploft_Top.stl">Liploft_Top.STL</a></td>
+  </tr>
+ <tr>
+  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/Liploft_Bottom.stl">Liploft_Bottom.STL</a></td>
+</tr>
   <tr>
-  <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/LipSync_Button.STL">LipSync_Button.STL</a></td>
+    <td rowspan="9">Lipsync Housing_design</td>
+    <td rowspan="9">2.2d</td>
+    <td rowspan="9">STL</td>
+    <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/LipSync_Button.STL">LipSync_Button.STL</a></td>
   </tr>
   <tr>
-  <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/Liploft_Top.STL">Liploft_Top.STL</a></td>
+  <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Housing_design/LipSync_Button.stl">LipSync_Button.STL</a></td>
+  </tr>
+  <tr>
+  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Front_Housing.STL">LipSync_Front_Housing.STL</a></td>
   </tr>
   <tr>
   <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Base.STL">LipSync_Joystick_Base.STL</a></td>
@@ -98,8 +110,8 @@ This GitHub repository will serve as a database for all files and documentation 
 <tr>
     <td><a href="https://github.com/makersmakingchange/Liploft/blob/master/Hardware/Housing_design/LipSync_Joystick_Stand.STL">LipSync_Joystick_Stand.STL</a></td>
 </tr>
-<tr>
-  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/Liploft_Bottom.stl">Liploft_Bottom.STL</a></td>
+ <tr>
+  <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Rear_Housing.stl">LipSync_Rear_Housing.STL</a></td>
 </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Hardware/Housing_design/Print_Settings.txt">Print_Settings.txt</a></td>
