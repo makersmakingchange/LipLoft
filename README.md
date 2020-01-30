@@ -107,7 +107,7 @@ This GitHub repository will serve as a database for all files and documentation 
   <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Rocker.STL">LipSync_Joystick_Rocker.STL</a></td>
 </tr>
 <tr>
-    <td><a href="https://github.com/makersmakingchange/Liploft/blob/master/Hardware/Housing_design/LipSync_Joystick_Stand.STL">LipSync_Joystick_Stand.STL</a></td>
+    <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Joystick_Stand.STL">LipSync_Joystick_Stand.STL</a></td>
 </tr>
  <tr>
   <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Hardware/Housing_design/LipSync_Rear_Housing.stl">LipSync_Rear_Housing.STL</a></td>
