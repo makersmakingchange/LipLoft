@@ -159,7 +159,33 @@ This GitHub repository will serve as a database for all files and documentation 
 
 ### Software
 
+* Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
+* sip/puff controls the throttle
+* LipSync joystick controls pitch and roll
+* Gryo calibration is automated
+
 ## Operation
+
+*	Download the necessary files from LipLoft github repository.
+  1. Visit LipLoft github repository at https://github.com/makersmakingchange/LipLoft
+  2. Click on “Clone or download” button” in green.
+  3. Click on “Download Zip” to download the necessary file.
+  4. Extract “LipLoft-master.zip” to the directory of your choice.
+*	Download and install MCP4261 Arduino library 
+  1. Visit MCP4261 library github repository at https://github.com/dreamcat4/Mcp4261
+  2. Click on “Clone or download” button” in green.
+  3. Click on “Download Zip” to download the necessary file.
+  4. Extract “Mcp4261-master.zip” to the directory of your choice.
+  5. Rename “Mcp4261-master.zip” to “Mcp4261.zip”
+  6. Open Arduino IDE
+  7. Click on Sketch > Include Library > Add .zip Library
+  8. Select “Mcp4261.zip”
+ *	Upload Lipsync and Liploft interface firmware 
+  1. Verify and upload "LipSync_Liploft_Firmware.ino" to the Lipsync unit using Arduino IDE
+  2. Verify and upload "Liploft_Interface_Firmware.ino" to the Liploft interface unit using Arduino IDE
+  3. The red led on bluetooth modules should start blinking faster and the green led on bluetooth modules should stay on to indicate connection is established between lipsync and liploft
+  4. You need to power the LipSync (Slave bluetooth module) 5 seconds before the LipLoft unit (Master bluetooth module) if you are connecting the LipSync to LipLoft for the first time
+  5. You can use bluetooth manual configuration code if the connection is not established. The bluetooth module in lipsync unit can be reconfigured using "Lipsync_Bluetooth_Config.ino" code and the bluetooth module in liploft interface unit can be reconfigured using "Interface_Bluetooth_Config.ino" code. You will need to upload both codes at the same time. The green led on both bluetooth modules will stay on once the connection is established.
 
 * Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
 * sip/puff controls the throttle
