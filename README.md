@@ -30,13 +30,13 @@ This GitHub repository will serve as a database for all files and documentation 
     <td>Liploft BOM (XLSX)</td>
     <td></td>
     <td>XLSX</td>
-    <td><a href="https://github.com/makersmakingchange/Liploft/raw/master/Liploft_BOM.xlsx">Liploft_BOM.xlsx</a></td>
+    <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/LipLoft_BOM.xlsx">Liploft_BOM.xlsx</a></td>
   </tr>
   <tr>
     <td>Liploft BOM (CSV)</td>
     <td></td>
     <td>CSV</td>
-    <td><a href="https://raw.githubusercontent.com/makersmakingchange/Liploft/master/Liploft_BOM.csv" download target="_blank">Liploft_BOM.csv</a></td>
+    <td><a href="https://github.com/makersmakingchange/LipLoft/blob/master/LipLoft_BOM.csv" download target="_blank">Liploft_BOM.csv</a></td>
   </tr>
   <tr>
     <td>Lipsync Liploft Firmware</td>
