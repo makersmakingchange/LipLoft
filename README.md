@@ -157,6 +157,12 @@ This GitHub repository will serve as a database for all files and documentation 
 <img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Liploft_Schematics.PNG" width="50%" height="70%" alt="Liploft Schematics"/>
 </p>
 
+* Setup the circuit for controller connection according to the following example:
+
+<p align="center">
+<img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Controller_Connection.jpeg" width="50%" height="50%" alt="Liploft Controller Connection Picture"/>
+</p>
+
 ### Software
 
 *	Download the necessary files from LipLoft github repository.
