@@ -1,9 +1,36 @@
 # Liploft
 
-This project was created to operate RF remote control drone with a [LipSync](https://github.com/makersmakingchange/LipSync).
-You can find all the necessary Hardware and Firmware to create your own version and operate a remote control drone with a [LipSync](https://github.com/makersmakingchange/LipSync).
+This project was created to enable a person with limited hand function, such as person with quadraplegia, to operate a radio frequency (RF) remote control drone. The project is based on a [LipSync Wireless](https://github.com/makersmakingchange/LipSync-Wireless), an open-source, mouth operated joystick. The user moves the joystick with their lips and mouth and uses sips and puffs of air on the joystick to interact with the drone remote control.
 
-This GitHub repository will serve as a database for all files and documentation associated with the Liploft project.
+This GitHub repository will serve as a database for all files and documentation associated with the Liploft project. 
+
+This project is a **work in progress**: for more information, or to get involved, visit the Makers Making Change forum thread: https://forum.makersmakingchange.com/t/lipsync-drone-control/196
+
+## Table of Contents
+- [Overview](#overview)
+  * [Approach](#approach)
+- [Download](#download)
+- [Installation and Setup](#installation-and-setup)
+  * [LipSync Wireless](#lipsync-wireless)
+  * [Liploft Remote Control Interface](#liploft-remote-control-interface)
+  * [Software](#software)
+- [Operation](#operation)
+  * [Pairing](#pairing)
+  * [Controlling the Drone with LipSync](#controlling-the-drone-with-lipsync)
+- [Contact Us](#contact-us)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+  
+## Overview
+Liploft requires the following components:
+
+1. A drone
+2. The drone's remote control, modified to connect with the LipLoft interface.
+3. A [Lipsync Wireless](https://github.com/makersmakingchange/LipSync-Wireless) with LipLoft firmware.
+
+### Approach
+The Liploft interface is comprised of a microcontroller, a Bluetooth module, and 4 digital potentiometers. The drone's remote controls is modified by removing the two physical joysticks and connecting the digital potetiometers to create virtual, software controllable joysticks. The Liploft acts as a Bluetooth master, connecting to the LipSync Wireless which acts as a Bluetooth slave. Physical movement of and and sips and puffs through the mouthpiece are digitized, transmitted to the Liploft interface and converted into virtual joystick signals.
+
 
 ## Download
 
@@ -117,9 +144,19 @@ This GitHub repository will serve as a database for all files and documentation 
 </tr>
 </table> 
 
-## Installation and setup
+## Installation and Setup
 
-### Hardware
+
+### LipSync Wireless
+1. Obtain a [Lipsync Wireless](https://github.com/makersmakingchange/LipSync-Wireless). There are several options for getting a Lipsync Wireless:
+ * Build your own. All the necessary files, software, and assembly guides are available in the [Lipsync Wireless GitHub repository](https://github.com/makersmakingchange/LipSync-Wireless). 
+ * Submit a build request through the [Makers Making Change website](https://www.makersmakingchange.com/project/lipsyncwireless/). MMC will attempt to pair you with a local volunteer maker to help build and program one. You'll be responsible for covering the cost of materials and shipping. Depending on your location, there may also be pre-built donated units available at little or no cost.
+ * [Order a built LipSync](https://www.makersmakingchange.com/order-built-lipsync/) from the Makers Making Change website.
+ 
+ 2. It may be helpful to modify the rear housing of the LipSync Wireless so the LED on the Bluetooth module is visible.
+
+### Liploft Remote Control Interface
+The remote control interface requires some permanent modifications to the drone's remote control and the addition of several hardware components.
 
 * Setup the circuit in breadboard according to the following diagram:
 
@@ -127,7 +164,7 @@ This GitHub repository will serve as a database for all files and documentation 
 <img align="center" src="https://github.com/makersmakingchange/LipLoft/raw/master/Hardware/Electronics/Liploft_Breadboard_Picture.png" width="50%" height="50%" alt="Liploft Breadboard Picture"/>
 </p>
 
-* Setup the bluetooth circuit in breadboard according to the following diagram:
+* Setup the Bluetooth circuit in breadboard according to the following diagram:
   * Bluetooth module RTS pin to Bluetooth module CTS
   * Bluetooth module RX pin to Arduino TX pin 
   * Bluetooth module TX pin to Arduino RX pin 
@@ -164,14 +201,15 @@ This GitHub repository will serve as a database for all files and documentation 
 </p>
 
 ### Software
+The Lipsync Wireless and Liploft interface require firmware.
 
-*	Download the necessary files from LipLoft github repository.
-  1. Visit LipLoft github repository at https://github.com/makersmakingchange/LipLoft
+*	Download the necessary files from the LipLoft GitHub repository.
+  1. Visit LipLoft GitHub repository at https://github.com/makersmakingchange/LipLoft
   2. Click on “Clone or download” button” in green.
   3. Click on “Download Zip” to download the necessary file.
   4. Extract “LipLoft-master.zip” to the directory of your choice.
 *	Download and install MCP4261 Arduino library 
-  1. Visit MCP4261 library github repository at https://github.com/dreamcat4/Mcp4261
+  1. Visit MCP4261 library GitHub repository at https://github.com/dreamcat4/Mcp4261
   2. Click on “Clone or download” button” in green.
   3. Click on “Download Zip” to download the necessary file.
   4. Extract “Mcp4261-master.zip” to the directory of your choice.
@@ -179,22 +217,31 @@ This GitHub repository will serve as a database for all files and documentation 
   6. Open Arduino IDE
   7. Click on Sketch > Include Library > Add .zip Library
   8. Select “Mcp4261.zip”
- *	Upload Lipsync and Liploft interface firmware 
-  1. Verify and upload "LipSync_Liploft_Firmware.ino" to the Lipsync unit using Arduino IDE
+ *	Upload Lipsync firmware 
+  1. Connect the Lipsync Wireless to the computer using the USB cable.
+  2. Verify and upload "LipSync_Liploft_Firmware.ino" to the Lipsync Wireless unit using Arduino IDE
+  * Upload Liploft firmware
+  1. Connect the Liploft interface to the computer using a USB cable.
   2. Verify and upload "Liploft_Interface_Firmware.ino" to the Liploft interface unit using Arduino IDE
-  3. The red led on bluetooth modules should start blinking faster and the green led on bluetooth modules should stay on to indicate connection is established between lipsync and liploft
-  4. You need to power the LipSync (Slave bluetooth module) 5 seconds before the LipLoft unit (Master bluetooth module) if you are connecting the LipSync to LipLoft for the first time
-  5. You can use bluetooth manual configuration code if the connection is not established. The bluetooth module in lipsync unit can be reconfigured using "Lipsync_Bluetooth_Config.ino" code and the bluetooth module in liploft interface unit can be reconfigured using "Interface_Bluetooth_Config.ino" code. You will need to upload both codes at the same time. The green led on both bluetooth modules will stay on once the connection is established.
+
   
 ## Operation
 
-* Arm the drone by puffing and sipping once ( the led in Interface unit will turn on to indicate it's armed )
+### Pairing
+  1. Connect power to the LipSync Wireless by plugging in the USB cable to a power pack or other power source.
+  2. Wait for 5 seconds. (You need to power the LipSync (Slave Bluetooth module) 5 seconds before the LipLoft unit (Master Bluetooth module) if you are connecting the LipSync to LipLoft for the first time.)
+  3. Connect power to the LipLoft unit. The red LED on Bluetooth modules should start blinking faster and the green led on both Bluetooth modules should stay on to indicate connection is established between Lipsync and Liploft.
+  
+If the connection is not established, you can use code to manually configure the Bluetooth modules. The Bluetooth module in the Lipsync Wirelss can be reconfigured using "Lipsync_Bluetooth_Config.ino" code and the Bluetooth module in the Liploft interface unit can be reconfigured using "Interface_Bluetooth_Config.ino" code. You will need to upload both codes at the same time. The green led on both Bluetooth modules will stay on once the connection is established.
+
+### Controlling the Drone with LipSync
+* Arm the drone by puffing and sipping once (the LED on the Liploft Interface will turn on to indicate it is armed.)
 * sip/puff controls the throttle
 * LipSync joystick controls pitch and roll
-* Gryo calibration is automated
+* Gyro calibration is automated
 
  
 ## Contact Us
 
-For technical questions, to get involved or share your LipSync experience we encourage you to contact info@makersmakingchange.com
+For technical questions, to get involved or share your LipSync experience we encourage you to visit the [forum thread](https://forum.makersmakingchange.com/t/lipsync-drone-control/196) for this project or contact info@makersmakingchange.com
 
