@@ -49,9 +49,9 @@ The Liploft interface is comprised of a microcontroller, a Bluetooth module, and
   </tr>
   <tr>
     <td>Liploft Manual</td>
-    <td></td>
+    <td>Version 1.0</td>
     <td>PDF</td>
-    <td></td>
+    <td><a href="https://github.com/makersmakingchange/LipLoft/raw/master/LipLoft_User_Manual.pdf">LipLoft_User_Manual.pdf</a></td>
   </tr>
   <tr>
     <td>Liploft BOM (XLSX)</td>
