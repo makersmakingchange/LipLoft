@@ -4,7 +4,7 @@ This project was created to enable a person with limited hand function, such as 
 
 This GitHub repository will serve as a database for all files and documentation associated with the Liploft project. 
 
-This project is a **work in progress**: for more information, or to get involved, visit the Makers Making Change forum thread: https://makersmakingchange.com/forum/topic/lipsync-drone-control/
+This project is a **work in progress**.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -240,8 +240,6 @@ If the connection is not established, you can use code to manually configure the
 * LipSync joystick controls pitch and roll
 * Gyro calibration is automated
 
- 
-## Contact Us
+<!-- ABOUT MMC START -->
 
-For technical questions, to get involved or share your LipSync experience we encourage you to visit the [forum thread](https://makersmakingchange.com/forum/topic/lipsync-drone-control/) for this project or contact info@makersmakingchange.com
-
+<!-- ABOUT MMC END -->
